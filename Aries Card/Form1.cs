@@ -23,7 +23,7 @@ namespace Aries_Card
             Pen drawPen = new Pen(Color.White, 15);
             SolidBrush drawBrush = new SolidBrush(Color.Black);
             formGraphics.Clear(Color.Black);
-            formGraphics.DrawLine(drawPen, 20, 20, 21, 21);
+            formGraphics.DrawLine(drawPen, 200, 200, 201, 201);
         }
     }
 }
