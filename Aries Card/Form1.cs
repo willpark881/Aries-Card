@@ -20,10 +20,10 @@ namespace Aries_Card
         private void formatBack_Click(object sender, EventArgs e)
         {
             Graphics formGraphics = this.CreateGraphics();
-            Pen drawPen = new Pen(Color.White, 5);
+            Pen drawPen = new Pen(Color.White, 2);
             SolidBrush drawBrush = new SolidBrush(Color.Black);
             formGraphics.Clear(Color.Black);
-            
+            formGraphics.DrawPie(drawPen, 20, 20, 20, 20, 30, 360);
         }
     }
 }
