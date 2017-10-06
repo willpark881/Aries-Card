@@ -23,7 +23,9 @@ namespace Aries_Card
             Graphics formGraphics = this.CreateGraphics();
             Pen drawPen = new Pen(Color.White, 2);
             SolidBrush drawBrush = new SolidBrush(Color.White);
+            Font drawFont = new Font("Times New Roman", 36, FontStyle.Bold);
             formGraphics.Clear(Color.Black);
+
 
             formGraphics.DrawPie(drawPen, 210, 335, 10, 10, 30, 360);
             formGraphics.FillPie(drawBrush, 210, 335, 10, 10, 30, 360);
@@ -83,6 +85,14 @@ namespace Aries_Card
             formGraphics.DrawLine(drawPen, 75, 75, 35, 115);
             formGraphics.DrawLine(drawPen, 365, 75, 405, 115);
             Thread.Sleep(500);
+
+            formGraphics.DrawString("Aries", drawFont, drawBrush, 155, 30);
+
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }
